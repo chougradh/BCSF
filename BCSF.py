@@ -1,4 +1,9 @@
-import sys
+# ******************************************************************************************
+# *******************************Author: Chougradh******************************************
+# ******************************************************************************************
+# *****************************The Breast Cancer Screening Framework GUI********************
+# ******************************************************************************************
+
 from collections import defaultdict
 import numpy as np
 
@@ -33,7 +38,7 @@ panel.pack()
 
 def callback():
     global filepath, label
-    filepath = askopenfilename(title="Ouvrir une image",filetypes=[('png files','.png'),('all files','.*')])
+    filepath = askopenfilename(title="open image",filetypes=[('png files','.png'),('all files','.*')])
     img2 = PhotoImage(file=filepath)
     panel.configure(image = img2)
     panel.image = img2

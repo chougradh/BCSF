@@ -56,7 +56,7 @@ def dataset(base_dir, n):
             X.append(img)
             y.append(class_index)
             useful_image_count += 1
-    print "processed %d, used %d" % (processed_image_count, useful_image_count)
+    print "processed %d images" % (processed_image_count)
 
     X = np.array(X).astype(np.float32)
     X = X.transpose((0, 3, 1, 2))
